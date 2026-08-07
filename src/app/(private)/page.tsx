@@ -4,6 +4,7 @@ import { Sentence } from "@/components/features/sentence";
 import { SentenceActions } from "@/components/features/sentence-actions";
 import { Button } from "@/components/ui/button";
 import { motivationalSentences } from "@/lib/data";
+import { env } from "@/lib/env.config";
 import { getRandomInt } from "@/lib/get-random";
 
 export default function Home() {
@@ -28,7 +29,7 @@ export default function Home() {
 					/>
 					<SentenceActions
 						title={`${sentence.text} \n - ${sentence.author}${sentence.year && ` • ${sentence.year}`}`}
-						url={window.location.href}
+						url={env.NEXT_PUBLIC_BASE_URL}
 					/>
 				</div>
 			) : (
