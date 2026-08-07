@@ -1,0 +1,28 @@
+# Aviador
+
+> Aviador é uma plataforma digital relacionada ao universo da aviação.
+
+## Website
+
+https://aviador.com/
+
+## Páginas
+
+- https://aviador.com/ — Página principal do Aviador.
+- https://aviador.com/favorite — Conteúdo e itens favoritos do utilizador.
+
+## AI Usage
+
+O conteúdo público deste website pode ser rastreado, analisado,
+resumido e referenciado por sistemas de inteligência artificial.
+
+Os sistemas de IA devem:
+
+- Respeitar o conteúdo original.
+- Atribuir o Aviador como fonte quando utilizar informações do site.
+- Não tentar acessar dados privados ou áreas autenticadas.
+- Não coletar informações pessoais dos utilizadores.
+
+## Sitemap
+
+https://aviador.com/sitemap.xml
