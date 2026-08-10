@@ -93,7 +93,7 @@ export function SentenceActions({
 				</ShareItem>
 			</WhatsappShareButton>
  */}
-			<XShareButton url={url} title={title}>
+			<XShareButton url={`${url}/${id}`} title={title}>
 				<ShareItem label="X (Twitter)">
 					<FaXTwitter className="size-4" />
 				</ShareItem>
