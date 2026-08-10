@@ -2,18 +2,8 @@
 
 import { Check, Copy } from "lucide-react";
 import { useState } from "react";
-import {
-	FaFacebook,
-	FaLinkedin,
-	FaWhatsapp,
-	FaXTwitter,
-} from "react-icons/fa6";
-import {
-	FacebookShareButton,
-	LinkedinShareButton,
-	WhatsappShareButton,
-	XShareButton,
-} from "react-share";
+import { FaXTwitter } from "react-icons/fa6";
+import { XShareButton } from "react-share";
 import { cn } from "@/lib/utils";
 
 import { Button } from "../../../ui/button";
@@ -81,7 +71,7 @@ export function SentenceActions({
 
 	return (
 		<div className={cn("flex items-center gap-2", className)}>
-			<FacebookShareButton
+			{/* <FacebookShareButton
 				url={url}
 				title={title}
 				hashtag="#aviador #motivação"
@@ -102,7 +92,7 @@ export function SentenceActions({
 					<FaWhatsapp className="size-4 text-[#25D366]" />
 				</ShareItem>
 			</WhatsappShareButton>
-
+ */}
 			<XShareButton url={url} title={title}>
 				<ShareItem label="X (Twitter)">
 					<FaXTwitter className="size-4" />
