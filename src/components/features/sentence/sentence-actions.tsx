@@ -16,8 +16,8 @@ import {
 } from "react-share";
 import { cn } from "@/lib/utils";
 
-import { Button } from "../ui/button";
-import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
+import { Button } from "../../ui/button";
+import { Tooltip, TooltipContent, TooltipTrigger } from "../../ui/tooltip";
 
 interface SentenceActionsProps {
 	url: string;

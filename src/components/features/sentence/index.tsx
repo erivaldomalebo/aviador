@@ -1,10 +1,7 @@
 import { Quote } from "lucide-react";
+import type { Sentence as SentenceType } from "@/core/types/sentence";
 
-export type SentenceProps = {
-	text: string;
-	author: string;
-	year: string;
-};
+export type SentenceProps = Omit<SentenceType, "id">;
 
 export function Sentence({ text, author, year }: SentenceProps) {
 	return (
