@@ -79,8 +79,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
 	return (
-		<html lang="pt" className={cn("font-sans", geist.variable)}>
-			<body>
+		<html
+			lang="pt"
+			suppressHydrationWarning
+			className={cn("font-sans", geist.variable)}
+		>
+			<body suppressHydrationWarning>
 				<TooltipProvider>{children}</TooltipProvider>
 			</body>
 		</html>

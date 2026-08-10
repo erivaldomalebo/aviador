@@ -19,6 +19,7 @@ export function SentenceContent({ id = 1 }: { id: number }) {
 							year={sentence.year}
 						/>
 						<SentenceActions
+							id={id}
 							title={`${sentence.text} \n - ${sentence.author}${sentence.year && ` • ${sentence.year}`}`}
 							url={env.NEXT_PUBLIC_BASE_URL}
 						/>

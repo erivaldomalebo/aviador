@@ -16,10 +16,12 @@ import {
 } from "react-share";
 import { cn } from "@/lib/utils";
 
-import { Button } from "../../ui/button";
-import { Tooltip, TooltipContent, TooltipTrigger } from "../../ui/tooltip";
+import { Button } from "../../../ui/button";
+import { Tooltip, TooltipContent, TooltipTrigger } from "../../../ui/tooltip";
+import { DownloadSentenceButton } from "./download-sentence-button";
 
 interface SentenceActionsProps {
+	id: number;
 	url: string;
 	title: string;
 	className?: string;
@@ -60,6 +62,7 @@ function ShareItem({
 }
 
 export function SentenceActions({
+	id,
 	url,
 	title,
 	className,
@@ -82,7 +85,6 @@ export function SentenceActions({
 				url={url}
 				title={title}
 				hashtag="#aviador #motivação"
-				content={title}
 			>
 				<ShareItem label="Facebook">
 					<FaFacebook className="size-4 text-[#1877F2]" />
@@ -106,6 +108,8 @@ export function SentenceActions({
 					<FaXTwitter className="size-4" />
 				</ShareItem>
 			</XShareButton>
+
+			<DownloadSentenceButton id={id} />
 
 			<Tooltip>
 				<TooltipTrigger asChild>
